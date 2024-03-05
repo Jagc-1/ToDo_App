@@ -8,10 +8,20 @@
     <link rel="shortcut icon" href="./ToDo-List.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>ToDo List</h1>
+    <h1>Lista De Tareas</h1>
 
     <form action="#" id="userInput">
-        <input type="text" placeholder="Escribe Tu Tarea Aquí.." autofocus>
+        <input type="text" id="tarea"  placeholder="Escribe Tu Tarea Aquí.." autofocus>
+        <input type="text" id="person"  placeholder="Persona que la agrega." autofocus>
+        <input type="date" id="inicio">
+        <input type="date" id="fin">
+        <div class="form-group">
+            <select class="form-control" id="urgencyInput">
+              <option value="low" >Baja urgencia</option>
+              <option value="medium" >Media urgencia</option>
+              <option value="high" >Alta urgencia</option>
+            </select>
+          </div>
         <input type="submit" value="+" id="addBtn">
     </form>
 
@@ -30,6 +40,7 @@
     <div id="stats">
        <!--Tareas Pendientes : 5 Completadas 3--> 
     </div>
+
 
     <script src="./main.js"></script>
 </body>
